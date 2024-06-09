@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font: bolder;"> Janvhi Collections</h1>
+            <nav>
+                <ul>
+                    <li> <a href="#home"><u> Home </u></a> </li>
+                    <li> <a href="#features"> <u>Branches </u></a> </li>
+                    <li> <a href="#about"> <u>About </u></a> </li>
+                    <li> <a href="contact"> <u>Contact </u></a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Website</h2>
+            <p>All your needs will be available here...!!!</p>
+            <a href="#features" class="btn"> About Us</a>
+        </div>
+    </section>
+
+    <section id="features" class="container">
+        <h2>Branches</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3> Branch 1 </h3>
+                <p> Natasha Apartment, Near Saraswati Stationary, Dhankawadi, Pune-43.</p>
+            </div>
+            <div class="feature-item">
+                <h3> Branch 2 </h3>
+                <p> Gurukrupa Chowk, Near Pragati Academy, Satara Road, Pune-42.</p>
+            </div>
+            <div class="feature-item">
+                <h3> Branch 3 </h3>
+                <p> Near Narsingh Vadewale, Tilak Road, Pune-30. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2> Image Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="mens.jpg" alt="Image1">
+                <div class="overlay">
+                    <p> Men's Wear</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="women5.jpg" alt="Image2">
+                <div class="overlay">
+                    <p> Women's Wear</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kids2.jpg" alt="Image3">
+                <div class="overlay">
+                    <p> Kid's Wear</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> &copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e){
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView ({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+</body>
+</html>
